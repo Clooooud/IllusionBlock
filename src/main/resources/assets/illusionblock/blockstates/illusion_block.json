@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "": { "model": "illusionblock:block/illusion_block", "uvlock": true }
+  }
+}
+

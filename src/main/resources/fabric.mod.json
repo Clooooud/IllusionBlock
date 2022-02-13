@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "illusionblock",
+  "version": "${version}",
+
+  "name": "Illusion Block",
+  "description": "A remake of Ars Magica's Illusion Block",
+  "authors": [
+    "Cloud"
+  ],
+  "contact": {
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "asset/illusionblock/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "fr.cloud.illusionblock.IllusionBlockMod"
+    ],
+    "client": [
+      "fr.cloud.illusionblock.IllusionBlockModClient"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  }
+}
