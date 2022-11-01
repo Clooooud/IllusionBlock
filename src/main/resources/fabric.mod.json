@@ -13,7 +13,7 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "asset/illusionblock/icon.png",
+  "icon": "assets/illusionblock/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -26,9 +26,9 @@
   },
 
   "depends": {
-    "fabricloader": ">=0.12.12",
+    "fabricloader": ">=0.14.10",
     "fabric": "*",
-    "minecraft": "1.18.x",
+    "minecraft": "1.19.x",
     "java": ">=17"
   }
 }

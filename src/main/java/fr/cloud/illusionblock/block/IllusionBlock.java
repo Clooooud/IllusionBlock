@@ -50,6 +50,7 @@ public class IllusionBlock extends BlockWithEntity {
 
         if (!blockEntity.hasMimic()) {
             super.spawnBreakParticles(world, player, pos, state);
+            return;
         }
 
         super.spawnBreakParticles(world, player, pos, blockEntity.getDeepestFacedBlockState());

@@ -11,8 +11,7 @@ import net.minecraft.client.render.block.entity.BlockEntityRenderer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactory;
 import net.minecraft.client.render.model.BakedModel;
 import net.minecraft.client.util.math.MatrixStack;
-
-import java.util.Random;
+import net.minecraft.util.math.random.Random;
 
 public class IllusionBlockRenderer implements BlockEntityRenderer<IllusionBlockEntity> {
 
@@ -29,6 +28,6 @@ public class IllusionBlockRenderer implements BlockEntityRenderer<IllusionBlockE
         BlockState state = entity.getDeepestFacedBlockState();
         BakedModel model = blockRenderManager.getModel(state);
         blockRenderManager.getModelRenderer().renderSmooth(entity.getWorld(), model, state, entity.getPos(), matrices,
-                vertexConsumers.getBuffer(state.isOpaque() ? RenderLayer.getCutout() : RenderLayer.getTranslucent()), true, new Random(), state.getRenderingSeed(entity.getPos()), OverlayTexture.DEFAULT_UV);
+                vertexConsumers.getBuffer(state.isOpaque() ? RenderLayer.getCutout() : RenderLayer.getTranslucent()), true, Random.create(), state.getRenderingSeed(entity.getPos()), OverlayTexture.DEFAULT_UV);
     }
 }
